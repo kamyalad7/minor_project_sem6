@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#template">Templates</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="questions">
+            <h2>Fill in the details for your resume</h2>
+            <form id="resumeForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" required>
+
+                <label for="education">Highest Education:</label>
+                <input type="text" id="education" required>
+
+                <label for="skills">Skills:</label>
+                <textarea id="skills" required></textarea>
+
+                <label for="position">Position Applying For:</label>
+                <select id="position">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Marketing Manager">Marketing Manager</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                </select>
+
+                <label for="company">Company Applying To:</label>
+                <select id="company">
+                    <option value="Google">Google</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Amazon">Amazon</option>
+                </select>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </section>
+
+        <section id="resumePreview" style="display: none;">
+            <h2>Resume Preview</h2>
+            <div id="previewContent"></div>
+            <button onclick="editResume()">Edit Details</button>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#template">Templates</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
